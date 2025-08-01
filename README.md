@@ -1,4 +1,4 @@
-# [FSLSTM: Federated Stacked LSTM for Anomaly Detection in Smart Buildings](https://arxiv.org/abs/2010.10293)
+# [A Federated Learning Approach to Anomaly Detection in Smart Buildings](https://arxiv.org/abs/2010.10293)
 
 [![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/release/python-370/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.7+-ee4c2c?logo=pytorch&logoColor=white)](https://pytorch.org/)
@@ -727,11 +727,10 @@ If you use this code in your research, please cite:
 @article{fslstm2020,
   title={A Federated Learning Approach to Anomaly Detection in Smart Buildings},
   journal={ACM Transactions on Internet of Things},
-  volume={1},
-  number={1},
-  pages={1--24},
-  year={2020},
-  publisher={ACM}
+  volume={2},
+  number={4},
+  pages={1--23},
+  year={2021}
 }
 ```
 
