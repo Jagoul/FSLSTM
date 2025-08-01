@@ -1,7 +1,7 @@
 # FSLSTM: Federated Stacked LSTM for Anomaly Detection in Smart Buildings
 
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/release/python-380/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-1.9+-ee4c2c?logo=pytorch&logoColor=white)](https://pytorch.org/)
+[![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/release/python-370/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-1.7+-ee4c2c?logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A privacy-by-design federated learning framework for anomaly detection in smart buildings using stacked Long Short-Term Memory (LSTM) networks. This repository implements the FSLSTM model that enables IoT sensors to collaboratively learn for anomaly detection while preserving data privacy through secure multi-party computation.
@@ -231,24 +231,11 @@ Our federated approach **significantly outperforms** traditional centralized and
 - **Real-World Datasets**: Evaluated on IoT production systems from smart buildings
 - **Secure Aggregation**: Built-in privacy protection mechanisms
 
-## 📋 Table of Contents
-
-- [Installation](#installation)
-- [Quick Start](#quick-start)
-- [Data Format](#data-format)
-- [Configuration](#configuration)
-- [Training](#training)
-- [Evaluation](#evaluation)
-- [Results](#results)
-- [Project Structure](#project-structure)
-- [Citation](#citation)
-- [License](#license)
-
 ## 🚀 Installation
 
 ### Prerequisites
 
-- Python 3.8 or higher
+- Python 3.7 or higher
 - CUDA-compatible GPU (recommended)
 
 ### Install from Source
@@ -268,15 +255,15 @@ pip install fslstm
 ### Dependencies
 
 ```bash
-pip install torch>=1.9.0
-pip install numpy>=1.21.0
-pip install pandas>=1.3.0
-pip install scikit-learn>=1.0.0
-pip install matplotlib>=3.4.0
+pip install torch>=1.7.0
+pip install numpy>=1.19.0
+pip install pandas>=1.2.0
+pip install scikit-learn>=0.24.0
+pip install matplotlib>=3.3.0
 pip install seaborn>=0.11.0
-pip install tqdm>=4.62.0
-pip install pysyft>=0.6.0
-pip install tensorboard>=2.7.0
+pip install tqdm>=4.60.0
+pip install pysyft>=0.5.0
+pip install tensorboard>=2.4.0
 ```
 
 ## ⚡ Quick Start
