@@ -9,7 +9,7 @@ A privacy-by-design federated learning framework for anomaly detection in smart 
 ## 🏢 Smart Building IoT Architecture
 
 <div align="center">
-<img src="docs/images/smart_building_architecture.png" alt="IoT-enabled Smart Building Architecture" width="600"/>
+<img src="assets/smart_building_sensors.png" alt="IoT-enabled Smart Building Architecture" width="600"/>
 </div>
 
 Our framework operates on comprehensive smart building infrastructures equipped with diverse IoT sensor networks including:
@@ -38,7 +38,7 @@ Our federated stacked LSTM approach achieves **state-of-the-art performance** co
 ### 📊 Smart Building Sensor Distribution
 
 <div align="center">
-<img src="docs/images/sensor_distribution.png" alt="Distribution of Sensor Categories" width="500"/>
+<img src="assets/sensor_distribution.png" alt="Distribution of Sensor Categories" width="500"/>
 </div>
 
 Our evaluation encompasses **180 IoT sensors** across five critical building systems:
@@ -51,7 +51,7 @@ Our evaluation encompasses **180 IoT sensors** across five critical building sys
 ### 🎯 Exceptional Anomaly Detection Performance
 
 <div align="center">
-<img src="docs/images/roc_comparison.png" alt="ROC Curve Comparison" width="600"/>
+<img src="assets/roc_comparison.png" alt="ROC Curve Comparison" width="600"/>
 </div>
 
 **Key Performance Highlights:**
@@ -88,7 +88,7 @@ Our evaluation encompasses **180 IoT sensors** across five critical building sys
 ### 📈 Scalability Analysis
 
 <div align="center">
-<img src="docs/images/scalability_analysis.png" alt="Convergence Time vs Number of Sensors" width="600"/>
+<img src="assets/convergeance_time.png" alt="Convergence Time vs Number of Sensors" width="600"/>
 </div>
 
 **Scalability Performance Insights:**
@@ -101,7 +101,7 @@ Our evaluation encompasses **180 IoT sensors** across five critical building sys
 ### 🏗️ Federated Learning Architecture
 
 <div align="center">
-<img src="docs/images/federated_architecture.png" alt="Federated Learning System Architecture" width="800"/>
+<img src="assets/federated_architecture.png" alt="Federated Learning System Architecture" width="800"/>
 </div>
 
 **Privacy-by-Design Implementation:**
@@ -115,7 +115,7 @@ Our evaluation encompasses **180 IoT sensors** across five critical building sys
 ### 💰 Communication Cost Efficiency
 
 <div align="center">
-<img src="docs/images/communication_cost.png" alt="Communication Cost Comparison" width="600"/>
+<img src="assets/communication_overhead.png" alt="Communication Cost Comparison" width="600"/>
 </div>
 
 **Significant Communication Overhead Reduction:**
@@ -128,7 +128,7 @@ Our evaluation encompasses **180 IoT sensors** across five critical building sys
 ### 🎯 Real-World Energy Prediction
 
 <div align="center">
-<img src="docs/images/energy_prediction.png" alt="Actual vs Predicted Energy Consumption" width="700"/>
+<img src="assets/energy_prediction.png" alt="Actual vs Predicted Energy Consumption" width="700"/>
 </div>
 
 **Outstanding Regression Performance:**
@@ -141,11 +141,11 @@ Our evaluation encompasses **180 IoT sensors** across five critical building sys
 ### 🚨 Real-Time Anomaly Detection Dashboard
 
 <div align="center">
-<img src="docs/images/anomaly_timeline_1.png" alt="Anomaly Detection Timeline - Lights & HVAC" width="800"/>
+<img src="assets/fslstm_anomaly_detection.png" alt="Anomaly Detection Timeline - Lights & HVAC" width="800"/>
 </div>
 
 <div align="center">
-<img src="docs/images/anomaly_timeline_2.png" alt="Anomaly Detection Timeline - Water Management" width="800"/>
+<img src="assets/fslstm_anomaly_detection2.png" alt="Anomaly Detection Timeline - Water Management" width="800"/>
 </div>
 
 **Advanced Anomaly Detection Capabilities:**
@@ -175,7 +175,7 @@ Our comprehensive evaluation utilizes **three real-world datasets** from General
 ### 🏗️ LSTM Architecture Details
 
 <div align="center">
-<img src="docs/images/lstm_architecture.png" alt="LSTM Block Architecture" width="500"/>
+<img src="assets/lstm_block.png" alt="LSTM Block Architecture" width="500"/>
 </div>
 
 **Stacked LSTM Configuration:**
@@ -188,7 +188,7 @@ Our comprehensive evaluation utilizes **three real-world datasets** from General
 ### 🔄 Multi-Task Federated Learning
 
 <div align="center">
-<img src="docs/images/multitask_architecture.png" alt="Multi-Task Federated Learning Architecture" width="700"/>
+<img src="assets/multitask_architecture.png" alt="Multi-Task Federated Learning Architecture" width="700"/>
 </div>
 
 **Federated Learning Process:**
