@@ -1,0 +1,133 @@
+MIT License
+
+Copyright (c) 2021 FSLSTM Contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+================================================================================
+
+FSLSTM: Federated Stacked LSTM for Anomaly Detection in Smart Buildings
+
+This software implements the federated learning framework described in:
+
+"A Federated Learning Approach to Anomaly Detection in Smart Buildings"
+Published in ACM Transactions on Internet of Things, 2021
+
+The FSLSTM framework enables privacy-preserving collaborative learning across
+IoT sensors in smart buildings for anomaly detection while maintaining data
+locality and security through federated learning principles.
+
+For more information about the research and methodology, please refer to:
+- Original research paper and citation details in README.md
+- Technical documentation in the docs/ directory
+- Example implementations in notebooks/
+
+================================================================================
+
+THIRD-PARTY LICENSES AND ACKNOWLEDGMENTS
+
+This project builds upon and integrates with several open-source libraries:
+
+PyTorch (BSD License)
+- Deep learning framework for neural network implementation
+- Copyright (c) 2016-2021 Facebook, Inc. and its affiliates
+- https://github.com/pytorch/pytorch
+
+PySyft (Apache License 2.0)
+- Privacy-preserving machine learning library
+- Copyright (c) 2017-2021 OpenMined
+- https://github.com/OpenMined/PySyft
+
+NumPy (BSD License)
+- Fundamental package for scientific computing
+- Copyright (c) 2005-2021 NumPy Developers
+- https://github.com/numpy/numpy
+
+Pandas (BSD License)
+- Data manipulation and analysis library
+- Copyright (c) 2008-2021, AQR Capital Management, LLC, Lambda Foundry, Inc. and PyData Development Team
+- https://github.com/pandas-dev/pandas
+
+Scikit-learn (BSD License)
+- Machine learning library for Python
+- Copyright (c) 2007-2021 The scikit-learn developers
+- https://github.com/scikit-learn/scikit-learn
+
+Matplotlib (PSF License)
+- Plotting library for Python
+- Copyright (c) 2012-2021 Matplotlib Development Team
+- https://github.com/matplotlib/matplotlib
+
+All third-party libraries are used in accordance with their respective licenses.
+Users are responsible for ensuring compliance with all applicable licenses
+when using or redistributing this software.
+
+================================================================================
+
+RESEARCH AND ACADEMIC USE
+
+If you use this software in academic research, please cite the original paper:
+
+@article{fslstm2021,
+  title={A Federated Learning Approach to Anomaly Detection in Smart Buildings},
+  journal={ACM Transactions on Internet of Things},
+  volume={1},
+  number={1},
+  pages={1--24},
+  year={2021},
+  publisher={ACM}
+}
+
+For commercial use or large-scale deployments in production environments,
+please ensure appropriate testing and validation for your specific use case.
+
+================================================================================
+
+PRIVACY AND SECURITY CONSIDERATIONS
+
+This software implements federated learning with privacy-preserving mechanisms.
+However, users should be aware that:
+
+1. While the framework is designed to keep data local, proper implementation
+   and configuration are required to ensure privacy guarantees.
+
+2. The security of the federated learning process depends on proper deployment
+   of secure aggregation and communication protocols.
+
+3. Users are responsible for ensuring compliance with applicable privacy
+   regulations and data protection laws in their jurisdiction.
+
+4. The software provides privacy-by-design features but does not guarantee
+   absolute privacy or security without proper implementation and deployment.
+
+================================================================================
+
+SUPPORT AND CONTRIBUTIONS
+
+This is an open-source research implementation. The contributors provide this
+software "as-is" without warranty. For:
+
+- Bug reports and feature requests: Please use the GitHub issue tracker
+- Research collaboration: Contact the contributors through appropriate channels
+- Commercial support: Not officially provided; users may seek community support
+
+Contributions to improve the software are welcome through pull requests,
+subject to review and the terms of this license.
+
+================================================================================
