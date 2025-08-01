@@ -1,0 +1,75 @@
+# FSLSTM Configuration for Smart Building Anomaly Detection
+# This configuration is based on the paper's experimental setup
+
+# Model Configuration
+model:
+  name: "FSLSTM"
+  type: "standard"  # Options: standard, multitask, attention
+  input_size: 7  # Number of input features (will be auto-detected from data)
+  hidden_size: 128  # Hidden units per LSTM layer
+  lstm_layers: 3  # Number of stacked LSTM layers (paper uses 3)
+  num_classes: 2  # Binary classification (normal vs anomalous)
+  fc_size: 100  # Fully connected layer size
+  dropout: 0.2  # Dropout rate for regularization
+  task_type: "classification"  # Options: classification, regression
+
+# Federated Learning Configuration
+federated:
+  num_clients: 180  # Total number of sensors/clients
+  clients_per_round: 36  # Clients participating per round (20% of total)
+  num_rounds: 50  # Total training rounds
+  local_epochs: 5  # Local training epochs per client
+  min_clients: 1  # Minimum clients needed to proceed
+  aggregation: "fedavg"  # Aggregation method: fedavg, weighted
+  client_selection: "random"  # Client selection strategy
+
+# Training Configuration
+training:
+  learning_rate: 0.001  # Initial learning rate
+  batch_size: 1024  # Batch size for training
+  optimizer: "adam"  # Optimizer: adam, sgd
+  momentum: 0.9  # Momentum for SGD
+  weight_decay: 0.0001  # L2 regularization
+  loss_function: "cross_entropy"  # Loss function: cross_entropy, bce, mse
+  device: "cuda"  # Device: cuda, cpu
+  seed: 42  # Random seed for reproducibility
+  gradient_clip: 1.0  # Gradient clipping threshold
+  early_stopping: true  # Enable early stopping
+  patience: 10  # Early stopping patience
+
+# Data Configuration
+data:
+  window_size: 600  # Time window size in minutes (10 hours)
+  sequence_length: 60  # LSTM sequence length (1 hour)
+  stride: 60  # Stride between sequences (1 hour)
+  train_split: 0.8  # Training data ratio
+  val_split: 0.1  # Validation data ratio
+  test_split: 0.1  # Test data ratio
+  normalize: true  # Enable data normalization
+  scaler_type: "standard"  # Normalization type: standard, minmax
+  split_strategy: "sensor_type"  # Client split strategy: sensor_type, random, zone
+
+# Sensor Configuration
+sensors:
+  categories:
+    - "lights"
+    - "thermostat" 
+    - "occupancy"
+    - "water_leakage"
+    - "building_access"
+  num_sensors: 180  # Total number of sensors
+  
+# Privacy Configuration  
+privacy:
+  secure_aggregation: true  # Enable secure aggregation
+  differential_privacy: false  # Enable differential privacy
+  epsilon: 1.0  # Privacy budget (if DP enabled)
+  delta: 0.00001  # Delta parameter (if DP enabled)
+  noise_multiplier: 1.0  # Noise multiplier for DP
+
+# Logging Configuration
+logging:
+  log_level: "INFO"  # Logging level: DEBUG, INFO, WARNING, ERROR
+  log_dir: "logs"  # Directory for log files
+  save_checkpoints: true  # Save model checkpoints
+  checkpoint_dir: "checkpoints"  # Directory for
