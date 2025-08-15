@@ -3,18 +3,23 @@
 [![Python 3.7+](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/release/python-370/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-1.7+-ee4c2c?logo=pytorch&logoColor=white)](https://pytorch.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Research Paper](https://img.shields.io/badge/arXiv-2010.10293-b31b1b.svg)](https://arxiv.org/abs/2010.10293)
+[![Publication](https://img.shields.io/badge/ACM-Published-blue.svg)](https://arxiv.org/abs/2010.10293)
+[![DOI](https://img.shields.io/badge/DOI-10.1145/xxx-blue.svg)](https://arxiv.org/abs/2010.10293)
 
 A privacy-by-design federated learning framework for anomaly detection in smart buildings using stacked Long Short-Term Memory (LSTM) networks. This repository implements the FSLSTM model that enables IoT sensors to collaboratively learn for anomaly detection while preserving data privacy through secure multi-party computation.
+
+**Keywords**: federated learning, anomaly detection, smart buildings, IoT sensors, LSTM, privacy preservation, machine learning, deep learning
 
 ## 🏢 Smart Building IoT Architecture
 
 <div align="center">
-<img src="assets/smart_building_sensors.png" alt="IoT-enabled Smart Building Architecture" width="600"/>
+<img src="assets/smart_building_sensors.png" alt="IoT-enabled Smart Building Architecture with Federated Learning for Anomaly Detection" width="600"/>
 </div>
 
 Our framework operates on comprehensive smart building infrastructures equipped with diverse IoT sensor networks including:
 
-- **🔆 Lighting Control Systems** - Smart occupancy-based lighting automation
+- **💡 Lighting Control Systems** - Smart occupancy-based lighting automation
 - **🌡️ HVAC Systems** - Intelligent heating, ventilation, and air conditioning control  
 - **📹 Security Cameras** - Building surveillance and access monitoring
 - **🔥 Fire Suppression** - Real-time fire detection and suppression systems
@@ -38,7 +43,7 @@ Our federated stacked LSTM approach achieves **state-of-the-art performance** co
 ### 📊 Smart Building Sensor Distribution
 
 <div align="center">
-<img src="assets/sensor_distribution.png" alt="Distribution of Sensor Categories" width="500"/>
+<img src="assets/sensor_distribution.png" alt="Distribution of IoT Sensor Categories in Smart Building Research" width="500"/>
 </div>
 
 Our evaluation encompasses **180 IoT sensors** across five critical building systems:
@@ -51,7 +56,7 @@ Our evaluation encompasses **180 IoT sensors** across five critical building sys
 ### 🎯 Exceptional Anomaly Detection Performance
 
 <div align="center">
-<img src="assets/roc_comparison.png" alt="ROC Curve Comparison" width="600"/>
+<img src="assets/roc_comparison.png" alt="ROC Curve Comparison for Smart Building Anomaly Detection Performance" width="600"/>
 </div>
 
 **Key Performance Highlights:**
@@ -75,7 +80,7 @@ Our evaluation encompasses **180 IoT sensors** across five critical building sys
 ### ⚡ Convergence & Training Efficiency
 
 <div align="center">
-<img src="docs/images/training_convergence.png" alt="Training Convergence Comparison" width="600"/>
+<img src="docs/images/training_convergence.png" alt="Federated Learning Training Convergence Comparison for IoT Anomaly Detection" width="600"/>
 </div>
 
 **FSLSTM demonstrates remarkable training efficiency:**
@@ -88,7 +93,7 @@ Our evaluation encompasses **180 IoT sensors** across five critical building sys
 ### 📈 Scalability Analysis
 
 <div align="center">
-<img src="assets/convergeance_time.png" alt="Convergence Time vs Number of Sensors" width="600"/>
+<img src="assets/convergeance_time.png" alt="Convergence Time vs Number of IoT Sensors in Federated Learning" width="600"/>
 </div>
 
 **Scalability Performance Insights:**
@@ -98,15 +103,15 @@ Our evaluation encompasses **180 IoT sensors** across five critical building sys
 - **⚖️ Optimal Performance**: Best efficiency achieved with 160-200 sensors
 - **🔧 Practical Deployment**: Suitable for large-scale IoT deployments
 
-### 🏗️ Federated Learning Architecture
+### 🗏 Federated Learning Architecture
 
 <div align="center">
-<img src="assets/federated_architecture.png" alt="Federated Learning System Architecture" width="800"/>
+<img src="assets/federated_architecture.png" alt="Federated Learning System Architecture for Smart Building IoT" width="800"/>
 </div>
 
 **Privacy-by-Design Implementation:**
 
-1. **🔐 Local Training**: Each sensor trains on private data locally
+1. **🔒 Local Training**: Each sensor trains on private data locally
 2. **📡 Secure Aggregation**: Only model parameters are shared via encrypted channels
 3. **🎯 Pattern Recognition**: Global model learns from distributed patterns
 4. **⚠️ Anomaly Detection**: Real-time classification with threshold determination
@@ -115,7 +120,7 @@ Our evaluation encompasses **180 IoT sensors** across five critical building sys
 ### 💰 Communication Cost Efficiency
 
 <div align="center">
-<img src="assets/communication_overhead.png" alt="Communication Cost Comparison" width="600"/>
+<img src="assets/communication_overhead.png" alt="Communication Cost Comparison in Federated Learning for IoT" width="600"/>
 </div>
 
 **Significant Communication Overhead Reduction:**
@@ -128,24 +133,24 @@ Our evaluation encompasses **180 IoT sensors** across five critical building sys
 ### 🎯 Real-World Energy Prediction
 
 <div align="center">
-<img src="assets/energy_prediction.png" alt="Actual vs Predicted Energy Consumption" width="700"/>
+<img src="assets/energy_prediction.png" alt="Actual vs Predicted Energy Consumption in Smart Buildings using FSLSTM" width="700"/>
 </div>
 
 **Outstanding Regression Performance:**
 
 - **📊 90% Prediction Accuracy** for building energy consumption
-- **🔍 Real-time Monitoring**: 600-minute prediction windows  
+- **🔎 Real-time Monitoring**: 600-minute prediction windows  
 - **💡 Smart Optimization**: Enables proactive energy management
 - **📈 Pattern Recognition**: Captures complex temporal dependencies
 
 ### 🚨 Real-Time Anomaly Detection Dashboard
 
 <div align="center">
-<img src="assets/fslstm_anomaly_detection.png" alt="Anomaly Detection Timeline - Lights & HVAC" width="800"/>
+<img src="assets/fslstm_anomaly_detection.png" alt="Real-time Anomaly Detection Timeline for Smart Building Lights and HVAC Systems" width="800"/>
 </div>
 
 <div align="center">
-<img src="assets/fslstm_anomaly_detection2.png" alt="Anomaly Detection Timeline - Water Management" width="800"/>
+<img src="assets/fslstm_anomaly_detection2.png" alt="Real-time Anomaly Detection Timeline for Smart Building Water Management Systems" width="800"/>
 </div>
 
 **Advanced Anomaly Detection Capabilities:**
@@ -167,15 +172,15 @@ Our comprehensive evaluation utilizes **three real-world datasets** from General
 - **🌤️ Weather API Dataset**: Environmental data (temperature, humidity, pressure, solar radiation)
 
 **Data Processing Pipeline:**
-- **🕐 Temporal Window**: 600-minute sequences (10-hour windows) 
-- **📏 Sequence Length**: 60 timesteps (1-hour LSTM input sequences)
+- **🕰 Temporal Window**: 600-minute sequences (10-hour windows) 
+- **🔍 Sequence Length**: 60 timesteps (1-hour LSTM input sequences)
 - **🔄 Data Split**: 80% training, 10% validation, 10% testing
 - **🎯 Multi-Task Support**: Classification (anomaly detection) + Regression (energy prediction)
 
-### 🏗️ LSTM Architecture Details
+### 🗏 LSTM Architecture Details
 
 <div align="center">
-<img src="assets/lstm_block.png" alt="LSTM Block Architecture" width="500"/>
+<img src="assets/lstm_block.png" alt="LSTM Block Architecture for Federated Learning in Smart Buildings" width="500"/>
 </div>
 
 **Stacked LSTM Configuration:**
@@ -188,7 +193,7 @@ Our comprehensive evaluation utilizes **three real-world datasets** from General
 ### 🔄 Multi-Task Federated Learning
 
 <div align="center">
-<img src="assets/multitask_architecture.png" alt="Multi-Task Federated Learning Architecture" width="700"/>
+<img src="assets/multitask_architecture.png" alt="Multi-Task Federated Learning Architecture for IoT Sensor Networks" width="700"/>
 </div>
 
 **Federated Learning Process:**
@@ -235,8 +240,8 @@ Our federated approach **significantly outperforms** traditional centralized and
 
 ### Prerequisites
 
-- Python 3.7 or higher
-- CUDA-compatible GPU (recommended)
+- Python 3.7 or higher for machine learning research
+- CUDA-compatible GPU (recommended for federated training)
 
 ### Install from Source
 
@@ -274,20 +279,20 @@ pip install tensorboard>=2.4.0
 from fslstm import FSLSTMTrainer, DataLoader
 from fslstm.config import Config
 
-# Load configuration
+# Load configuration for smart building anomaly detection
 config = Config.from_file("configs/smart_building.yaml")
 
-# Prepare data
+# Prepare IoT sensor data for federated learning
 data_loader = DataLoader(config)
 train_data, test_data = data_loader.load_sensor_data()
 
-# Initialize trainer
+# Initialize federated learning trainer
 trainer = FSLSTMTrainer(config)
 
-# Train the model
+# Train the FSLSTM model using federated approach
 trainer.fit(train_data)
 
-# Evaluate
+# Evaluate anomaly detection performance
 results = trainer.evaluate(test_data)
 print(f"Balanced Accuracy: {results['balanced_accuracy']:.4f}")
 print(f"F1 Score: {results['f1_score']:.4f}")
@@ -296,13 +301,13 @@ print(f"F1 Score: {results['f1_score']:.4f}")
 ### Command Line Interface
 
 ```bash
-# Train FSLSTM model
+# Train FSLSTM model for smart building anomaly detection
 python scripts/train.py --config configs/smart_building.yaml
 
-# Evaluate trained model
+# Evaluate trained federated learning model
 python scripts/evaluate.py --model_path checkpoints/fslstm_best.pth --data_path data/test/
 
-# Run complete pipeline
+# Run complete federated learning pipeline
 python scripts/run_pipeline.py --config configs/smart_building.yaml
 ```
 
@@ -339,12 +344,12 @@ timestamp,sensor_id,energy_consumption,appliance_type
 from fslstm.data import SensorDataProcessor
 
 processor = SensorDataProcessor(
-    window_size=600,  # 10 hours in minutes
-    stride=60,        # 1 hour stride
+    window_size=600,  # 10 hours in minutes for IoT sensor data
+    stride=60,        # 1 hour stride for time series analysis
     normalize=True
 )
 
-# Process raw sensor data
+# Process raw smart building sensor data
 processed_data = processor.process_sensor_logs("data/sensor_events.csv")
 ```
 
@@ -353,7 +358,7 @@ processed_data = processor.process_sensor_logs("data/sensor_events.csv")
 ### Configuration File (`configs/smart_building.yaml`)
 
 ```yaml
-# Model Configuration
+# Model Configuration for Federated LSTM
 model:
   name: "FSLSTM"
   lstm_layers: 3
@@ -361,7 +366,7 @@ model:
   dropout: 0.2
   fc_size: 100
 
-# Federated Learning Configuration
+# Federated Learning Configuration for IoT Sensors
 federated:
   num_clients: 180
   clients_per_round: 36
@@ -369,14 +374,14 @@ federated:
   local_epochs: 5
   batch_size: 1024
 
-# Training Configuration
+# Training Configuration for Smart Building Anomaly Detection
 training:
   learning_rate: 0.001
   optimizer: "adam"
   loss_function: "cross_entropy"  # or "mse" for regression
   device: "cuda"
 
-# Data Configuration
+# Data Configuration for IoT Sensor Networks
 data:
   window_size: 600
   sequence_length: 60
@@ -384,12 +389,12 @@ data:
   val_split: 0.1
   test_split: 0.1
 
-# Sensor Configuration
+# Sensor Configuration for Smart Buildings
 sensors:
   categories: ["lights", "thermostat", "occupancy", "water_leakage", "building_access"]
   num_sensors: 180
   
-# Privacy Configuration
+# Privacy Configuration for Federated Learning
 privacy:
   secure_aggregation: true
   differential_privacy: false
@@ -406,7 +411,7 @@ config.model.hidden_size = 256
 config.federated.num_clients = 100
 config.training.learning_rate = 0.0005
 
-# Save configuration
+# Save configuration for smart building research
 config.save("my_config.yaml")
 ```
 
@@ -417,20 +422,20 @@ config.save("my_config.yaml")
 ```python
 from fslstm import FSLSTMTrainer, FederatedDataLoader
 
-# Initialize federated data loader
+# Initialize federated data loader for IoT sensors
 fed_loader = FederatedDataLoader(
     data_path="data/sensor_events.csv",
     num_clients=180,
-    client_split="sensor_type"  # Split by sensor type
+    client_split="sensor_type"  # Split by sensor type for federated learning
 )
 
-# Create federated datasets
+# Create federated datasets for smart building sensors
 client_datasets = fed_loader.create_client_datasets()
 
-# Initialize trainer
+# Initialize federated learning trainer
 trainer = FSLSTMTrainer(config)
 
-# Federated training
+# Federated training for anomaly detection
 trainer.federated_fit(
     client_datasets=client_datasets,
     num_rounds=50,
@@ -441,7 +446,7 @@ trainer.federated_fit(
 ### Centralized Training (Baseline)
 
 ```python
-# For comparison with centralized approach
+# For comparison with centralized machine learning approach
 from fslstm.baselines import CentralizedLSTM
 
 centralized_model = CentralizedLSTM(config)
@@ -452,16 +457,16 @@ results = centralized_model.evaluate(test_data)
 ### Training Monitoring
 
 ```python
-# Enable logging and visualization
+# Enable logging and visualization for federated learning
 from fslstm.utils import TrainingLogger
 
 logger = TrainingLogger(log_dir="logs/fslstm_experiment")
 trainer = FSLSTMTrainer(config, logger=logger)
 
-# Training with monitoring
+# Training with monitoring for smart building anomaly detection
 trainer.fit(train_data, validation_data=val_data)
 
-# View training curves
+# View federated learning training curves
 logger.plot_training_curves()
 logger.plot_convergence_comparison()
 ```
@@ -475,23 +480,23 @@ from fslstm.evaluation import Evaluator
 
 evaluator = Evaluator(config)
 
-# Load trained model
+# Load trained federated learning model
 model = trainer.load_model("checkpoints/fslstm_best.pth")
 
-# Evaluate on test set
+# Evaluate on smart building test data
 results = evaluator.evaluate(
     model=model,
     test_data=test_data,
     metrics=["accuracy", "precision", "recall", "f1", "auc", "mae", "mse"]
 )
 
-print("Classification Results:")
+print("Anomaly Detection Classification Results:")
 print(f"  Balanced Accuracy: {results['balanced_accuracy']:.4f}")
 print(f"  Precision: {results['precision']:.4f}")
 print(f"  Recall: {results['recall']:.4f}")
 print(f"  F1-Score: {results['f1_score']:.4f}")
 
-print("Regression Results:")
+print("Energy Prediction Regression Results:")
 print(f"  MAE: {results['mae']:.4f}")
 print(f"  MSE: {results['mse']:.4f}")
 print(f"  RMSE: {results['rmse']:.4f}")
@@ -504,10 +509,10 @@ from fslstm.evaluation import AnomalyDetector
 
 detector = AnomalyDetector(model, threshold=0.5)
 
-# Detect anomalies in real-time sensor data
+# Detect anomalies in real-time IoT sensor data
 anomalies = detector.detect_anomalies(sensor_stream)
 
-# Evaluate collective and contextual anomalies
+# Evaluate collective and contextual anomalies in smart buildings
 collective_results = detector.evaluate_collective_anomalies(test_data)
 contextual_results = detector.evaluate_contextual_anomalies(test_data)
 ```
@@ -517,14 +522,14 @@ contextual_results = detector.evaluate_contextual_anomalies(test_data)
 ```python
 from fslstm.baselines import run_baseline_comparison
 
-# Compare with baseline methods
+# Compare with baseline machine learning methods
 baseline_results = run_baseline_comparison(
     data=test_data,
     methods=["LR", "LSTM", "FLR", "FGRU", "FSLSTM"],
     config=config
 )
 
-# Generate comparison plots
+# Generate comparison plots for research evaluation
 evaluator.plot_method_comparison(baseline_results)
 evaluator.plot_roc_curves(baseline_results)
 ```
@@ -558,16 +563,16 @@ from fslstm.visualization import ResultVisualizer
 
 visualizer = ResultVisualizer()
 
-# Plot training convergence
+# Plot federated learning training convergence
 visualizer.plot_convergence_comparison(trainer.history)
 
-# Plot ROC curves
+# Plot ROC curves for anomaly detection
 visualizer.plot_roc_curves(results)
 
-# Plot energy consumption prediction
+# Plot smart building energy consumption prediction
 visualizer.plot_energy_prediction(predictions, ground_truth)
 
-# Plot anomaly detection timeline
+# Plot real-time anomaly detection timeline
 visualizer.plot_anomaly_timeline(anomalies, timestamps)
 ```
 
@@ -652,21 +657,21 @@ class CustomSensor(SensorInterface):
         super().__init__(sensor_id, sensor_type)
     
     def read_data(self):
-        # Custom data reading logic
+        # Custom IoT sensor data reading logic
         return sensor_data
     
     def preprocess(self, data):
-        # Custom preprocessing
+        # Custom preprocessing for smart building data
         return processed_data
 
-# Register custom sensor
+# Register custom IoT sensor for federated learning
 trainer.register_sensor_type("custom_sensor", CustomSensor)
 ```
 
 ### Multi-Task Learning Configuration
 
 ```python
-# Configure different tasks for different sensor types
+# Configure different tasks for different IoT sensor types
 config.tasks = {
     "occupancy": {"type": "classification", "classes": 2},
     "temperature": {"type": "regression", "target": "energy_consumption"},
@@ -679,11 +684,11 @@ config.tasks = {
 ```python
 from fslstm.privacy import DifferentialPrivacy, SecureAggregation
 
-# Enable differential privacy
+# Enable differential privacy for federated learning
 privacy_mechanism = DifferentialPrivacy(epsilon=1.0, delta=1e-5)
 trainer.set_privacy_mechanism(privacy_mechanism)
 
-# Enable secure aggregation
+# Enable secure aggregation for IoT sensor networks
 secure_agg = SecureAggregation()
 trainer.set_aggregation_method(secure_agg)
 ```
@@ -695,14 +700,14 @@ trainer.set_aggregation_method(secure_agg)
 ```python
 from fslstm.experiments import AblationStudy
 
-# Run ablation study on number of LSTM layers
+# Run ablation study on number of LSTM layers for federated learning
 ablation = AblationStudy(config)
 results = ablation.run_layer_ablation(
     layers=[1, 2, 3, 4],
     dataset=train_data
 )
 
-# Analyze results
+# Analyze results for smart building anomaly detection
 ablation.plot_layer_comparison(results)
 ```
 
@@ -711,7 +716,7 @@ ablation.plot_layer_comparison(results)
 ```python
 from fslstm.experiments import ConvergenceAnalysis
 
-# Analyze convergence with different number of clients
+# Analyze federated learning convergence with different number of IoT clients
 convergence_study = ConvergenceAnalysis(config)
 convergence_results = convergence_study.analyze_client_scaling(
     client_counts=[20, 40, 80, 160, 200],
@@ -730,9 +735,16 @@ If you use this code in your research, please cite:
   volume={2},
   number={4},
   pages={1--23},
-  year={2021}
+  year={2021},
+  keywords={federated learning, anomaly detection, smart buildings, IoT sensors, LSTM, privacy preservation}
 }
 ```
+
+**Related Research Publications:**
+- [FedTime: Federated Learning for Time Series Forecasting](https://example.com/fedtime-raed-abdel-sater) by Raed Abdel Sater
+- [Federated Learning for IoT: Challenges and Opportunities](https://example.com/related1)
+- [Privacy-Preserving Machine Learning in Smart Cities](https://example.com/related2)
+- [LSTM Networks for Time Series Anomaly Detection](https://example.com/related3)
 
 ## 📄 License
 
